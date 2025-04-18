@@ -1,6 +1,7 @@
 # CodeDocify
 CodeDocify | Modern Nodejs, JavaScript, tailwindcss and twig based automated documentation framework
 
+```
 codedocify/
 ├── src/
 │   ├── cli/
@@ -28,3 +29,4 @@ codedocify/
 ├── postcss.config.js
 ├── webpack.config.js
 ├── package.json
+```
