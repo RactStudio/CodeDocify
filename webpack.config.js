@@ -1,9 +1,9 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/editor/scripts/main.js',
+  entry: './src/editor/js/main.js',
   output: {
-    filename: 'bundle.js',
+    filename: 'main.min.js',
     path: path.resolve(__dirname, 'public/assets/js'),
   },
   module: {
