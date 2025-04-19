@@ -23,14 +23,13 @@ jobs:
         run: |
           echo "codo.ractstudio.com" > public/CNAME
 
-      - name: Index Search
-        run: |
-          echo "codo.ractstudio.com" > public/CNAME
-          node ./search/indexBuilder.js
-          node ./search/algoliaUploader.js
-        env:
-            APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
-            ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+      # - name: Index Search
+      #   run: |
+      #     node ./search/indexBuilder.js
+      #     node ./search/algoliaUploader.js
+      #   env:
+      #       APP_ID: ${{ secrets.ALGOLIA_APP_ID }}
+      #       ADMIN_API_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
